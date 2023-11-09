@@ -1,0 +1,26 @@
+.footer {
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the content within the footer */
+  padding: 20px; /* Add padding for spacing */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  margin-left: -30px;
+  margin-right: -30px;
+  transition: background 0.3s, opacity 0.3s;
+  margin-bottom: -40px
+}
+
+.footer p {
+  margin: 0; /* Remove default margin to ensure clean spacing */
+  margin-top: -16px;
+  background: linear-gradient(transparent, rgb(0, 0, 0)); /* Transparent gradient effect when scrolled */
+  opacity: 0.8; /* Adjust the opacity as needed */
+}
+
+.footer.scrolled {
+  background: linear-gradient(transparent, rgb(0, 0, 0)); /* Transparent gradient effect when scrolled */
+  opacity: 1.0; /* Adjust the opacity as needed */
+}

@@ -1,0 +1,16 @@
+/* Add this to your CSS file */
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Move the social icons to the left */
+  }
+  
+  .social-icons a {
+    margin-right: 10px; /* Adjust the spacing between icons */
+  }
+  
+  .social-icons svg {
+    font-size: 24px; /* Adjust the icon size */
+    color: #fff; /* Set the icon color */
+  }
+  

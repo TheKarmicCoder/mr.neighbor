@@ -1,0 +1,33 @@
+.testimonials {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #8B4513; /* Brown background color for the testimonials section
+     */
+     margin-left: -30px;
+     margin-right: -30px;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    background-color: #748959; /* Brown background color for the h2 */
+    color: #fff; /* White text color for the h2 */
+    padding: 10px; /* Add padding to the h2 for better visibility */
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  
+  /* testimonials */
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the testimonial cards horizontally */
+    gap: 20px; /* Adjust the gap between cards as needed */
+  }
+  
+  .testimonial-card {
+    /* Additional styles for testimonial cards, if needed */
+  }
+  

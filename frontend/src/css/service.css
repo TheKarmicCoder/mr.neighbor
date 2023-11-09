@@ -1,0 +1,40 @@
+.services {
+    text-align: center; /* Center-align the content within the services section */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 20px;
+    position: relative; 
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    background: linear-gradient(rgba(116, 137, 89, 1), rgba(116, 137, 89, 0)); /* Gradient background color for the h2 */
+    color: #fff;
+    padding: 10px;
+    margin-left: -30px;
+    margin-right: -30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s; /* Add a smooth transition for the background */
+  }
+  .service-cards {
+    display: flex;
+    justify-content: center; /* Center-align the service cards horizontally */
+    gap: 20px; /* Adjust the gap between cards as needed */
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* service modal */
+  /* Add any additional styles for the service modal if needed */
+  .service-modal {
+    display: none;
+  }
+  
+  .service-modal.visible {
+    display: block;
+  }
+  

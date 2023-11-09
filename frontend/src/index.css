@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #FC8D35;  /* Orange as the primary color */
+    --secondary-color: #302426;
+    --tertiary-color: #748959;
+    --background-color: #302426;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Example of using the primary color for buttons */
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Example of using the tertiary color for links */
+  a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+  }
+  
+  /* Example of using the secondary color for headings */
+  h1, h2, h3 {
+    color: white;
+  }
+  
+  /* Example of using primary color for a highlighted section */
+  .highlight {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+  }
+  

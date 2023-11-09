@@ -1,0 +1,52 @@
+.form {
+    background: none; /* No background color */
+    width: 70%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8); /* White border with transparency */
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1,
+p,
+label,
+textarea,
+input,
+button {
+    color: #fff; /* White text color */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea,
+input {
+    width: calc(100% - 20px); /* Adjust width with some spacing */
+    font-weight: 400;
+    padding: 8px 10px;
+    margin-bottom: 15px; /* Add space between input fields and text areas */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* White border with transparency */
+    background: none; /* No background color */
+    color: #fff; /* White text color */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border-color: #6f6df4;
+}
+
+
+button {
+    border: 2px solid #fff; /* White border for button */
+    padding: 10px 20px;
+    background: none; /* No background color */
+    border-radius: 3px;
+}
