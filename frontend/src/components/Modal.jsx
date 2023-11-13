@@ -1,5 +1,6 @@
 
 import { useNavigate } from 'react-router-dom';
+import "../css/modal.css";
 
 const ServiceModal = ({ service, onClose }) => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const ServiceModal = ({ service, onClose }) => {
       {service && (
         <div className="modal-content">
           <img src={service.image} alt={service.title} />
-          <h2>{service.title}</h2>
+          <h3>{service.title}</h3>
           <p>{service.description}</p>
           <button onClick={handleGetQuote}>Get Quote</button>
           <button onClick={onClose}>Close</button>

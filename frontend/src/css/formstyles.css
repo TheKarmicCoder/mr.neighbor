@@ -50,3 +50,56 @@ button {
     background: none; /* No background color */
     border-radius: 3px;
 }
+
+
+
+/* Default styles for all devices */
+
+/* Media query for iPhone SE and similar devices */
+/* Media query for iPhone SE and similar devices */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .form {
+    width: 75%; /* Adjust the width as needed */
+    min-width: auto; /* Remove the minimum width restriction */
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px; /* Adjust the padding to bring the border down */
+    margin-top: 0rem; /* Adjust the margin to provide more spacing from the top */
+    border-radius: 10px; /* Add border radius for a rounded appearance */
+    margin-left: 2px;
+}
+
+    /* Additional styles for smaller screens if needed */
+}
+
+  /* Media query for standard smartphones */
+  @media only screen and (min-width: 569px) and (max-width: 767px) {
+      
+  }
+  
+  /* Media query for tablets and larger smartphones */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+   
+  }
+  
+  /* Media query for small laptops and desktops */
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Adjust styles for small laptops and desktops */
+  }
+  
+  /* Media query for medium-sized laptops and desktops */
+  @media only screen and (min-width: 1280px) and (max-width: 1599px) {
+    /* Adjust styles for medium-sized laptops and desktops */
+  }
+  
+  /* Media query for larger laptops and desktops */
+  @media only screen and (min-width: 1600px) and (max-width: 1919px) {
+    /* Adjust styles for larger laptops and desktops */
+  }
+  
+  /* Media query for extra-large screens (1920px and above) */
+  @media only screen and (min-width: 1920px) {
+    /* Adjust styles for extra-large screens (1920px and above) */
+  }
+  

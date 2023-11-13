@@ -1,3 +1,5 @@
+/* Default styles for all devices */
+
 .about {
   text-align: center;
   padding: 40px;
@@ -45,4 +47,195 @@
   margin-top: 10px;
   font-size: 1.4rem; /* Adjust font size */
   color: #444;
+}
+
+/* Media queries for responsive design */
+
+/* Small screens, such as iPhone SE */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .about {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .technologies h3 {
+    font-size: 1.5rem;
+  }
+
+  .technology-item svg {
+    font-size: 2rem;
+  }
+
+  .technology-item p {
+    font-size: 1rem;
+  }
+}
+
+/* Standard smartphones */
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+  .about {
+    padding: 30px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+
+  .technologies h3 {
+    font-size: 1.6rem;
+  }
+
+  .technology-item svg {
+    font-size: 2.5rem;
+  }
+
+  .technology-item p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets and larger smartphones */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    padding: 40px;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+
+  .technologies h3 {
+    font-size: 1.8rem;
+  }
+
+  .technology-item svg {
+    font-size: 3rem;
+  }
+
+  .technology-item p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small laptops and desktops */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .about {
+    padding: 50px;
+  }
+
+  .about-title {
+    font-size: 2.8rem;
+  }
+
+  .about p {
+    font-size: 1.4rem;
+  }
+
+  .technologies h3 {
+    font-size: 2rem;
+  }
+
+  .technology-item svg {
+    font-size: 3.5rem;
+  }
+
+  .technology-item p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium-sized laptops and desktops */
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+  .about {
+    padding: 60px;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+  }
+
+  .technologies h3 {
+    font-size: 2.2rem;
+  }
+
+  .technology-item svg {
+    font-size: 4rem;
+  }
+
+  .technology-item p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Larger laptops and desktops */
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  .about {
+    padding: 70px;
+  }
+
+  .about-title {
+    font-size: 3.5rem;
+  }
+
+  .about p {
+    font-size: 1.7rem;
+  }
+
+  .technologies h3 {
+    font-size: 2.5rem;
+  }
+
+  .technology-item svg {
+    font-size: 4.5rem;
+  }
+
+  .technology-item p {
+    font-size: 2rem;
+  }
+}
+
+/* Extra-large screens (1920px and above) */
+@media only screen and (min-width: 1920px) {
+  .about {
+    padding: 80px;
+  }
+
+  .about-title {
+    font-size: 4rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+  }
+
+  .technologies h3 {
+    font-size: 3rem;
+  }
+
+  .technology-item svg {
+    font-size: 5rem;
+  }
+
+  .technology-item p {
+    font-size: 2.5rem;
+  }
 }

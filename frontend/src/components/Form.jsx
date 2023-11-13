@@ -1,6 +1,6 @@
-import  { useState } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
 import '../css/formstyles.css'; // Replace with the correct path to your CSS file
+import axios from 'axios';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -8,28 +8,49 @@ const Form = () => {
     email: '',
     phone: '',
     message: '',
+    image: null,
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type } = e.target;
+
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: type === 'file' ? e.target.files[0] : value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      // Send the form data to your backend API using Axios
-      const response = await axios.post('http://localhost:3001/submit', formData);
+    const { name, email, phone, message, image } = formData;
 
-      // Handle the response as needed
-      console.log('Form submission successful:', response.data);
+    // Create mailto link
+    const mailtoLink = `mailto:mr.neighbor23@gmail.com?subject=New Form Submission&body=Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+
+    // Open the default email client
+    window.location.href = mailtoLink;
+
+    // Create FormData object to send the form data, including the image
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', name);
+    formDataToSend.append('email', email);
+    formDataToSend.append('phone', phone);
+    formDataToSend.append('message', message);
+    formDataToSend.append('image', image);
+
+    try {
+      const response = await axios.post('http://localhost:3001/submit', formDataToSend, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      console.log('Form submitted successfully', response.data);
+      // Handle success, e.g., show a success message or redirect
     } catch (error) {
-      // Handle errors
-      console.error('Error submitting form:', error.message);
+      console.error('Error submitting form:', error);
+      // Handle failure, e.g., show an error message
     }
   };
 
@@ -83,6 +104,16 @@ const Form = () => {
             value={formData.message}
             onChange={handleChange}
             autoComplete="off"
+          />
+        </div>
+        <div className="row">
+          <label htmlFor="image"></label>
+          <input
+            id="image"
+            type="file"
+            name="image"
+            onChange={handleChange}
+            accept="image/*"
           />
         </div>
         <button type="submit">Submit</button>

@@ -9,6 +9,7 @@
     background-color: var(--background-color);
     color: var(--secondary-color);
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
   }
   
   /* Example of using the primary color for buttons */

@@ -58,3 +58,70 @@ nav {
   }
   
   
+
+
+  /* Default styles for all devices */
+
+/* Media query for iPhone SE and similar devices */
+/* Media query for iPhone SE and similar devices */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  nav {
+    width: 100%;
+    order: 2;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin: 0;
+  }
+
+  /* Mobile styles */
+  .logo {
+     /* Adjust the margin as needed */
+    
+  }
+
+  .brand-name {
+    display: flex; /* Hide the brand name on mobile */
+    margin-left: 50px;
+  }
+
+  li {
+    display: none; /* Hide the nav links on mobile */
+  }
+}
+
+
+/* Media query for standard smartphones */
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+  /* Adjust styles for standard smartphones */
+}
+
+/* Media query for tablets and larger smartphones */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust styles for tablets and larger smartphones */
+}
+
+/* Media query for small laptops and desktops */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Adjust styles for small laptops and desktops */
+}
+
+/* Media query for medium-sized laptops and desktops */
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+  /* Adjust styles for medium-sized laptops and desktops */
+}
+
+/* Media query for larger laptops and desktops */
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  /* Adjust styles for larger laptops and desktops */
+}
+
+/* Media query for extra-large screens (1920px and above) */
+@media only screen and (min-width: 1920px) {
+  /* Adjust styles for extra-large screens (1920px and above) */
+}
