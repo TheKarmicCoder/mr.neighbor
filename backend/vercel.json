@@ -11,7 +11,8 @@
       },
       {
         "src": "/(.*)",
-        "dest": "index.html"
+        "use": "rewrites",
+        "destination": "index.html"
       }
     ]
   }
