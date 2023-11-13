@@ -9,7 +9,9 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "mr-neighbor-theta.vercel.app"
+}));
 
 // Serve static files from the React app (assuming your frontend build is in a "build" folder)
 app.use(express.static(path.join(__dirname,"frontend", 'dist')));
