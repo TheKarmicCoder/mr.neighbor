@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Serve static files from the React app (assuming your frontend build is in a "build" folder)
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 const PORT = process.env.PORT || 3001;
 // Connect to MongoDB
