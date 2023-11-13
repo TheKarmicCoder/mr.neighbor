@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Serve static files from the React app (assuming your frontend build is in a "build" folder)
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname,"frontend", 'dist')));
 
 const PORT = process.env.PORT || 3001;
 // Connect to MongoDB
@@ -23,7 +23,7 @@ app.post('/submit', submitForm);
 
 // Serve your React app on all routes (except those handled by other routes like /submit)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname,"frontend", 'build', 'index.html'));
 });
 
 app.listen(PORT, () => {
