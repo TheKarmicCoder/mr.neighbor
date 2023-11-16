@@ -17,6 +17,12 @@ const servicesData = [
       link: '/services/delivery',
       image: "/delivery2.jpg"
     },
+    {
+      title: 'Movers',
+      description: 'Fast and reliable moving services for transportation of goods.',
+      link: '/services/delivery',
+      image: "/movers1.webp"
+    },
   ];
   
   export default servicesData;

@@ -1,6 +1,6 @@
 // SocialIcons.js
 import React from 'react';
-import { FaFacebook, FaInstagram, FaGithub, FaTiktok, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaGithub, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import "../css/social-icons.css";
 
@@ -19,8 +19,8 @@ const SocialIcons = ({ socialData }) => {
       <Link to={socialData.tiktokUrl} target="_blank" rel="noopener noreferrer">
         <FaTiktok />
       </Link>
-      <Link to={socialData.linkedinUrl} target="_blank" rel="noopener noreferrer">
-        <FaLinkedin />
+      <Link to={socialData.youtubeUrl} target="_blank" rel="noopener noreferrer">
+        <FaYoutube />
       </Link>
     </div>
   );
